@@ -94,7 +94,6 @@ to update-turtles
   set happy? mean [distance myself] of myenemies >= mean [distance myself] of myfriends
   ]
 end
-
 @#$#@#$#@
 GRAPHICS-WINDOW
 210
@@ -213,7 +212,7 @@ num_enemy
 num_enemy
 0
 10
-5.0
+1.0
 1
 1
 NIL
@@ -226,7 +225,7 @@ SWITCH
 216
 frienemy?
 frienemy?
-0
+1
 1
 -1000
 
@@ -269,6 +268,42 @@ mean [mean [distance myself] of enemy_link-neighbors] of turtles
 2
 1
 11
+
+PLOT
+660
+11
+860
+161
+Friend-distance
+NIL
+NIL
+0.0
+10.0
+0.0
+10.0
+true
+false
+"" ""
+PENS
+"default" 1.0 0 -14985354 true "" "plot mean [mean [distance myself] of friend_link-neighbors] of turtles"
+
+PLOT
+660
+180
+860
+330
+Enemy-distance
+NIL
+NIL
+0.0
+10.0
+0.0
+10.0
+true
+false
+"" ""
+PENS
+"default" 1.0 0 -8053223 true "" "plot mean [mean [distance myself] of enemy_link-neighbors] of turtles"
 
 @#$#@#$#@
 ## WHAT IS IT?
