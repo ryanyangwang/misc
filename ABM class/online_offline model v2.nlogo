@@ -340,7 +340,7 @@ population
 population
 10
 200
-10.0
+110.0
 10
 1
 NIL
@@ -863,7 +863,7 @@ NetLogo 6.3.0
     </enumeratedValueSet>
     <steppedValueSet variable="population" first="10" step="10" last="200"/>
   </experiment>
-  <experiment name="experiment_population_large" repetitions="100" sequentialRunOrder="false" runMetricsEveryStep="false">
+  <experiment name="experiment_population_large" repetitions="100" sequentialRunOrder="false" runMetricsEveryStep="true">
     <setup>setup</setup>
     <go>go</go>
     <metric>mean [opinion] of nodes</metric>
@@ -878,7 +878,7 @@ NetLogo 6.3.0
     <enumeratedValueSet variable="offline_network">
       <value value="&quot;spatial-cluster&quot;"/>
     </enumeratedValueSet>
-    <steppedValueSet variable="population" first="10" step="10" last="200"/>
+    <steppedValueSet variable="population" first="20" step="10" last="200"/>
   </experiment>
 </experiments>
 @#$#@#$#@
